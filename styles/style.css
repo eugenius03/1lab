@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+p {
+  font-size: 20px;
+}
+
+.on_hover {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --color-white: white;
+  height: 100%;
+  background: linear-gradient(45deg, #1a1a2e, #16213e);
+  color: #fff;
+  font-family: Arial, sans-serif;
+ 
+  
+}
+
+body{
+  background: linear-gradient(45deg, #1a1a2e, #16213e);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.elem-navbar {
+  width: 6rem;
+}
+
+
+.host-navbar {
+  background: #101010;
+  font-family: calibri;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.host-navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.host-logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+}
+
+.host-logo a:hover, button:hover {
+  color: turquoise;
+  font-weight: bold;
+}
+
+.host-ulbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  /* justify-content: space-around; */
+}
+
+.host-nav-button {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+
+
+.li a:hover, li {
+  color: turquoise;
+  font-weight: bold;
+}
+
+.signinbutton {
+  background-color: purple;
+  /* margin-left: 5px; */
+  border-radius: 10px;
+  padding: 10px;
+  width: auto;
+  border: none;
+  white-space: nowrap
+}
+
+.signinbutton:hover {
+  opacity: 0.7;
+
+}
+
+.host-signin {
+
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.hoverbtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: darkgray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  display: none;
+}
+.hoverbtn:hover {
+  background-color: white;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #4a69bd;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  box-sizing: border-box;
+  font-size:inherit;
+}
+.form-group input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+
+
+@media(max-width: 768px){
+  p {
+    font-size: 10px;
+  }
+  li a {
+    font-size: 15px;
+    margin-right: 0px;
+  }
+  .elem-navbar{
+    min-width: 4rem;
+    width:auto;
+  }
+  button a{
+    font-size: 13px;
+  }
+  host-signup{
+    font-size:10px;
+  }
+  .image-container{
+    display: none;
+  }
+  .hosting-options{
+    width:auto;
+    max-width: 500px;
+  }
+@media(max-width:360){
+  .elem-navbar{
+    width:auto;
+  }
+}
